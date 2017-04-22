@@ -1,0 +1,474 @@
+* { margin:0; padding:0; box-sizing:border-box; 
+}
+body{
+        background-image: url(img/football/5.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-attachment: fixed;
+        font-family: Georgia, times, serif;
+    }
+a, li{
+    list-style-type: none;
+        text-decoration: none;  
+  }
+  /*     Header */
+header{
+
+    height: 40px;
+    top: 0;
+    background-color: rgb(34,34,34);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,1.0);  
+}
+.search{
+float: right;
+width: 75px;
+padding: 2px 10px;
+    background: white;
+    margin: 8px 100px;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.search:focus {
+    width: 260px;
+
+}
+.btn-reg{
+    float: right;
+    padding: 2px 10px;
+    background: rgba(61,201,53,1.0);
+    margin: 8px 20px;
+    border-radius: 10px;
+}
+.btn-reg a{
+    color:black;
+}
+
+.btn-reg:hover{
+      background-color:rgba(129,231,95,1.0);
+
+}
+  /*     END of Header */
+.body{
+
+    padding-top: 140px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+  /* --------------------------------------------------------   */
+  /*  Navigation  */
+  /* --------------------------------------------------------   */
+   .results{
+    background-image: url(img/index/header.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .results::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+nav{    
+
+    }
+nav ul{
+    list-style-type: none;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+    padding: 0;
+    margin: 0;
+
+}
+nav li a{
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 200px;
+    color: #666;
+    text-align: center;
+    }
+
+nav li a:hover{
+    color:white;
+    background: linear-gradient(0deg, rgba(255,255,255,1.0), rgba(202,0,0,1.0));
+}
+nav li a.current{
+    color: rgba(56, 56, 56, 1.0);
+     background: radial-gradient(ellipse, rgba(255,255,255,1.0), rgba(202,0,0,1.0));
+}
+nav li a.current:hover{
+    color:#000000;
+}
+li.dropdown {   
+    display: inline-block;
+
+}
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 142px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+div.dropdown-content a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+li.dropdown:hover .dropdown-content {
+    display: block;
+
+    }
+
+ /* --------------------------------------------------------    */
+  /*  END - Navigation  */
+  /* --------------------------------------------------------   */
+
+ /* --------------------------------------------------------    */
+  /*  Results */
+  /* --------------------------------------------------------   */
+    .results .res1{
+    padding: 20px;
+    float: left;
+    width:50%;
+
+  }
+  .res1 li{
+    padding: 5px;   
+        margin: 0 auto;
+    }
+ 
+  div.status_time{
+    width: 170px;
+    padding-left: 20px;
+    display: inline-block;
+  }
+  div.status_game{
+    padding-left: 20px;
+    width: 260px;
+    display: inline-block;
+  }
+  .results span{
+    color: #fff;
+  }
+ /* --------------------------------------------------------    */
+  /*  END - Results  */
+  /* --------------------------------------------------------   */
+
+  /* --------------------------------------------------------   */
+  /*  Slider  */
+  /* --------------------------------------------------------   */
+/* Slideshow container */
+.slideshow-container {
+    
+    position: relative;
+    height: 400px;
+    
+}
+
+.mySlides {
+   
+    display: none;
+}
+.mySlides img{
+ width: 100%;
+ height: 400px;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.div-dot{
+ 
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+  }
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ /* --------------------------------------------------------    */
+  /*  END - Slider  */
+  /* --------------------------------------------------------   */
+   /* --------------------------------------------------------  */
+  /* COntent */
+  /* --------------------------------------------------------   */
+  .container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+  .container{
+    padding: 40px 20px 40px 20px;
+    background-color: white;
+    /*position: relative;*/
+}
+.content{
+    width: 68%;    
+    float: left;
+    background-color: #585858;
+    padding:10px;
+}
+aside{
+    float: left;
+    border: solid grey;
+    width: 32%;
+}
+
+  /* --------------------------------------------------------   */
+  /* News */
+  /* --------------------------------------------------------   */
+.news::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.news{
+    background-color: white;
+}
+
+.wrapTitle h2 {
+    color: #000000;
+    font-size: 26px;   
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ddd;
+}
+.newsBlog{
+    float: left;
+    width: 48%;
+   
+   margin:  1%;
+
+  border-top: 3px solid black;
+  background-image: 
+      linear-gradient(#000, transparent),
+      linear-gradient(#000, transparent);
+background-size: 3px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat; 
+ 
+}
+.newsBlogImg{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.newsBlogDate{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+.newsBlog img{
+    width: 100%;
+    height: inherit;
+    vertical-align: middle;
+}
+
+.newsBlogDate span{
+        display: table-cell;
+}
+.dateD {
+    background: #A0A0A0;
+    text-align: center;
+    width: 30px;
+}
+.dateM {
+    background: grey;
+    text-align: center;
+    width: 30px;
+}
+
+  /* --------------------------------------------------------   */
+  /* End News */
+  /* --------------------------------------------------------   */
+/* --------------------------------------------------------   */
+  /* Videos */
+  /* --------------------------------------------------------   */
+  .videos{
+    background: grey;
+    padding: 10px;
+  }
+  .videoBlog::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+ 
+  .videoBlog{
+    padding: 5px;
+    width:  550px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    height: 100%; 
+    background: linear-gradient(135deg, rgba(223,233,237,1) 0%, rgba(195,225,235,1) 12%, rgba(33,180,226,1) 43%, rgba(113,206,239,1) 62%, rgba(113,206,239,1) 77%, rgba(195,225,235,1) 85%, rgba(252,252,252,1) 97%, rgba(252,252,252,1) 100%);
+       
+ 
+    
+
+    
+  }
+  .videoBlog:hover{
+       background: rgba(127,201,255,1.0);
+
+         transition: background-color 0.6s ease;
+  }
+  
+  .videoBlogVideo {
+    width: 340px;
+    height: 200px;
+    position: relative;
+    
+    overflow: hidden;
+    float: left;
+
+}
+
+.img {
+    position: absolute;
+    transition: 1s;
+   width: 100%;
+
+            
+}
+.icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:80px;
+    left:140px;
+    z-index: 1;
+
+}
+.videoBlogVideo:hover .img {
+     transform:scale(1.25);
+}
+.videoBlogText{
+    padding: 20px;
+        background: rgb(192,192,192);
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.photos{
+    height: 100px;
+    border: solid black;
+}
+  
+  /* --------------------------------------------------------   */
+  /* TABLE */
+  /* --------------------------------------------------------   */
+  .table{
+    margin: auto;
+    margin: 40px;
+  }
+    .table table{
+        width: 100%;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+    }
+    .table td, th{
+        text-align: left;
+        padding: 8px;
+    }
+    .table th{
+    background-color: #808080;
+    color: white;
+    border: 1px solid #ddd;
+    }
+    .table td{
+        border: 1px solid #ddd;
+    }
+    .table td a{
+       color: black;
+
+    }
+    .td-team:hover {
+        background-color: #C0C0C0;
+
+    }
+    .td-team:hover a{
+        color: white;
+    }
+    div.table .td-1{
+          background-color: #4CAF50;
+    }
+    div.table .td-2{
+        background: #92CD93;
+    }
+  /* --------------------------------------------------------   */
+  /* COntent */
+  /* --------------------------------------------------------   */
+
+  footer .sub-footer{
+    width: 100%;
+
+  }
+   footer {
+    width: 100%;
+  }
